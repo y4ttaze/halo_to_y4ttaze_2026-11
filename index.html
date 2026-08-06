@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>サークル「波呂とy4ttaze」デジタルお品書き</title>
+    <link rel="stylesheet" href="style.css?v=20260719-6">
+</head>
+
+<body>
+    <!-- Backgrounds -->
+    <div id="bg-container">
+        <!-- Teaser Video (Always playing in background) -->
+        <video id="teaser-video" muted playsinline></video>
+
+        <!-- Blurred Jacket Background -->
+        <div id="jacket-bg-container">
+            <img id="jacket-bg" src="" alt="">
+            <div class="jacket-bg-overlay"></div>
+        </div>
+    </div>
+
+    <!-- 1. Signage Mode -->
+    <div id="signage-mode" class="mode active">
+        <div class="tap-wrapper">
+            <div class="tap-bg-blur"></div>
+            <div class="tap-text">サークル「波呂とy4ttaze」<br>デジタルお品書き</div>
+            <div class="tap-subtext">COMING SOON</div>
+        </div>
+    </div>
+
+    <!-- 2. EP Selection Mode -->
+    <div id="ep-selection-mode" class="mode">
+        <button class="back-btn" id="back-to-signage">← BACK</button>
+        <div class="artist-filter-wrapper">
+            <div id="artist-filter-list" class="artist-filter-list">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+        <div class="ep-carousel-container">
+            <h2 class="ep-selection-title">SELECT EP</h2>
+            <div id="ep-list" class="ep-list">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Catalog Mode -->
+    <div id="catalog-mode" class="mode">
+        <button class="back-btn" id="back-to-ep">← SELECT EP</button>
+        <div id="catalog-container" class="player-container">
+
+            <div class="player-content-wrapper">
+                <div id="jacket-container">
+                    <img id="current-jacket" src="" alt="Jacket">
+                    <div class="glass-reflection"></div>
+                </div>
+
+                <div class="catalog-info-container">
+                    <div class="ep-header">
+                        <div class="marquee-container" style="flex: 1; margin-right: 20px;">
+                            <h1 id="ep-title-display" class="marquee-content">Loading...</h1>
+                        </div>
+                        <div class="artist-info-group">
+                            <h2 id="ep-artist-display">Artist Name</h2>
+                            <div class="social-links" id="social-links">
+                                <a id="link-x" href="#" target="_blank" class="social-btn">
+                                    <svg viewBox="0 0 24 24" fill="white">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a>
+                                <a id="link-yt" href="#" target="_blank" class="social-btn">
+                                    <svg viewBox="0 0 24 24" fill="white">
+                                        <path
+                                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                    </svg>
+                                </a>
+                                <a id="link-nico" href="#" target="_blank" class="social-btn">
+                                    <svg viewBox="0 0 24 24" fill="white">
+                                        <path
+                                            d="M4.606 5.86c-1.393 0-2.523 1.13-2.523 2.522 0 1.391 1.13 2.521 2.523 2.521 1.392 0 2.522-1.13 2.522-2.521 0-1.392-1.13-2.522-2.522-2.522zm14.788 0c-1.392 0-2.522 1.13-2.522 2.522 0 1.391 1.13 2.521 2.522 2.521 1.393 0 2.523-1.13 2.523-2.521 0-1.392-1.13-2.522-2.523-2.522zM21.921 2.871H2.079C.931 2.871 0 3.802 0 4.95v14.1c0 1.147.931 2.079 2.079 2.079h19.842c1.147 0 2.079-.932 2.079-2.079V4.95c0-1.148-.932-2.079-2.079-2.079zM12 18.232c-3.143 0-5.69-2.548-5.69-5.69 0-3.143 2.547-5.691 5.69-5.691 3.142 0 5.69 2.548 5.69 5.691 0 3.142-2.548 5.69-5.69 5.69z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-details">
+                        <div class="catalog-meta">
+                            <span class="catalog-price" id="catalog-price">¥1,000</span>
+                            <span class="catalog-tracks" id="catalog-tracks">6曲入り</span>
+                        </div>
+                        <div class="catalog-desc-box">
+                            <p id="catalog-desc">ここに作品の説明文や、こだわりの一文が入ります。</p>
+                        </div>
+                        <div id="catalog-tracklist" class="catalog-tracklist">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mini Player & Volume Control for Background Teaser -->
+    <div id="mini-player" class="mini-player">
+        <div id="mini-player-trigger" style="display:flex; flex:1; align-items:center; cursor:pointer;">
+            <img id="mini-jacket" class="spinning-record" src="" alt="Mini Jacket">
+            <div class="mini-info">
+                <div class="marquee-container">
+                    <div class="marquee-content" id="mini-track">Loading...</div>
+                </div>
+                <div class="marquee-container">
+                    <div class="marquee-content" id="mini-ep">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mini-social-links" style="display:flex; gap: 10px; margin-right: 20px;">
+            <a id="mini-link-x" href="#" target="_blank" class="social-btn" style="display:none;">
+                <svg viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
+            <a id="mini-link-yt" href="#" target="_blank" class="social-btn" style="display:none;">
+                <svg viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+            </a>
+        </div>
+
+        <div id="mini-volume-control" class="mini-volume">
+            <svg id="vol-icon-mute" viewBox="0 0 24 24" fill="white">
+                <path
+                    d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+            </svg>
+            <svg id="vol-icon-unmute" viewBox="0 0 24 24" fill="white" style="display:none;">
+                <path
+                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+            </svg>
+            <input type="range" id="global-volume-slider" min="0" max="1" step="0.01" value="0">
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal">
+        <div class="image-modal-bg"></div>
+        <div class="image-modal-close">✕</div>
+        <img class="image-modal-content" id="modal-img" src="">
+    </div>
+
+    <!-- App Scripts -->
+    <script src="app.js?v=20260719-5"></script>
+</body>
+
+</html>

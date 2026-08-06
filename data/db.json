@@ -1,0 +1,80 @@
+[
+  {
+    "id": "halo_new_ep",
+    "artist": "波呂",
+    "title": "波呂 個人新譜 (仮)",
+    "jacket": "data/01_halo_new_ep/jacket.svg",
+    "artist_img": "data/01_halo_new_ep/artist_halo.jpg",
+    "teaser": null,
+    "tracks": [
+      {
+        "title": "新曲1 (仮)"
+      },
+      {
+        "title": "新曲2 (仮)"
+      },
+      {
+        "title": "新曲3 (仮)"
+      },
+      {
+        "title": "新曲4 (仮)"
+      }
+    ],
+    "price": "価格未定",
+    "tracks_count": 4,
+    "description": "波呂の個人新譜EPです。鋭意制作中！",
+    "x": "https://x.com/c_alam_ela",
+    "yt": "https://www.youtube.com/@c_alam_ela"
+  },
+  {
+    "id": "y4ttaze_new_ep",
+    "artist": "y4ttaze",
+    "title": "y4ttaze 個人新譜 (仮)",
+    "jacket": "data/02_y4ttaze_new_ep/jacket.svg",
+    "artist_img": "data/02_y4ttaze_new_ep/artist_y4ttaze.jpg",
+    "teaser": null,
+    "tracks": [
+      {
+        "title": "新曲A (仮)"
+      },
+      {
+        "title": "新曲B (仮)"
+      },
+      {
+        "title": "新曲C (仮)"
+      },
+      {
+        "title": "新曲D (仮)"
+      }
+    ],
+    "price": "価格未定",
+    "tracks_count": 4,
+    "description": "y4ttazeの個人新譜EPです。音源・詳細情報は後日公開！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "collab_new_ep",
+    "artist": "波呂とy4ttaze",
+    "title": "波呂 × y4ttaze コラボEP (仮)",
+    "jacket": "data/03_collab_new_ep/jacket.svg",
+    "artist_img": "data/03_collab_new_ep/artist_collab.svg",
+    "teaser": null,
+    "tracks": [
+      {
+        "title": "コラボ曲1 (仮)"
+      },
+      {
+        "title": "コラボ曲2 (仮)"
+      },
+      {
+        "title": "コラボ曲3 (仮)"
+      }
+    ],
+    "price": "価格未定",
+    "tracks_count": 3,
+    "description": "波呂とy4ttazeによるスペシャルコラボEP。乞うご期待！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  }
+]
