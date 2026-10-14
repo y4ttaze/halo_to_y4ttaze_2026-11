@@ -353,116 +353,25 @@
     "yt": "https://www.youtube.com/@y4ttaze"
   },
   {
-    "id": "08_y4ttaze_sexT4pe",
+    "id": "08_y4ttaze_アクキー",
     "prefix": "08",
-    "artist": "y4ttaze",
-    "title": "sexT4pe",
-    "is_new": false,
-    "jacket": "data/08_y4ttaze_sexT4pe/jacket.jpg",
-    "artist_img": "data/08_y4ttaze_sexT4pe/artist_y4ttaze.jpg",
-    "teaser": "data/08_y4ttaze_sexT4pe/teaser.mp4",
-    "tracks": [
-      {
-        "title": "サハラ(pixel Sahara)"
-      },
-      {
-        "title": "Interlude(1)"
-      },
-      {
-        "title": "BitchBoi"
-      },
-      {
-        "title": "Interlude(2)"
-      },
-      {
-        "title": "クリムト"
-      },
-      {
-        "title": "セックステープ"
-      },
-      {
-        "title": "シロップ"
-      },
-      {
-        "title": "BoisLuv"
-      },
-      {
-        "title": "クリムト(Remix)"
-      },
-      {
-        "title": "LuvPotion"
-      },
-      {
-        "title": "BitchBoi(ft. flower)"
-      },
-      {
-        "title": "(radio)"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 12,
-    "description": "旧譜（持ち込み極少）",
-    "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze"
-  },
-  {
-    "id": "09_y4ttaze_DaysBeforeVillain",
-    "prefix": "09",
-    "artist": "y4ttaze",
-    "title": "days before villain EP",
-    "is_new": false,
-    "jacket": "data/09_y4ttaze_DaysBeforeVillain/jacket.jpg",
-    "artist_img": "data/09_y4ttaze_DaysBeforeVillain/artist_y4ttaze.jpg",
-    "teaser": "data/09_y4ttaze_DaysBeforeVillain/teaser.mp4",
-    "tracks": [
-      {
-        "title": "あおいくん"
-      },
-      {
-        "title": "ゆうえんち"
-      },
-      {
-        "title": "17ice(142cm) feat. 夜行梅"
-      },
-      {
-        "title": "ショートフィルム!"
-      },
-      {
-        "title": "スペースシャトル"
-      },
-      {
-        "title": "神椿"
-      },
-      {
-        "title": "(radio)"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 7,
-    "description": "2026年7月リリースの前作EP（残少）",
-    "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze"
-  },
-  {
-    "id": "10_y4ttaze_アクキー",
-    "prefix": "10",
     "artist": "y4ttaze",
     "title": "アクキー",
     "is_new": false,
-    "jacket": "data/10_y4ttaze_アクキー/00.サムネ.jpg",
+    "jacket": "data/08_y4ttaze_アクキー/00.サムネ.jpg",
     "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": "data/10_y4ttaze_アクキー/teaser.mp4",
+    "teaser": "data/08_y4ttaze_アクキー/teaser.mp4",
     "tracks": [],
-    "price": "各¥1,000",
+    "price": "各¥800",
     "tracks_count": 0,
     "description": "「mixT4pe」と「Remix」シリーズのアクリルキーホルダー全6種が登場！Remixシリーズはこだわりの両面印刷仕様。どれも鞄につけたくなる可愛いデザインなので、ぜひお手に取ってみてください！",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze",
     "type": "merch",
     "images": [
-      "data/10_y4ttaze_アクキー/01.Remix表面.jpg",
-      "data/10_y4ttaze_アクキー/02.Remix裏面.jpg",
-      "data/10_y4ttaze_アクキー/03.アクキー6種.jpg"
+      "data/08_y4ttaze_アクキー/01.Remix表面.jpg",
+      "data/08_y4ttaze_アクキー/02.Remix裏面.jpg",
+      "data/08_y4ttaze_アクキー/03.アクキー6種.jpg"
     ]
   }
 ]
