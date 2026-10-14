@@ -342,16 +342,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Play random teaser
-    function playNextRandomTeaser() {
+    function playNextRandomTeaser(onlyNew = false) {
         if (!teaserVideo) return;
 
         // Pick a random EP that is currently visible
         let activeNodes = epDOMNodes.filter(n => n.card.style.display !== "none");
+        if (onlyNew) {
+            const newNodes = activeNodes.filter(n => n.is_new);
+            if (newNodes.length > 0) {
+                activeNodes = newNodes;
+            }
+        }
         if (activeNodes.length === 0) return;
         
         // Prevent playing the same video twice in a row if possible
         if (activeNodes.length > 1 && currentTeaserIndex !== -1) {
-            activeNodes = activeNodes.filter(n => epDOMNodes.indexOf(n) !== currentTeaserIndex);
+            const diffNodes = activeNodes.filter(n => epDOMNodes.indexOf(n) !== currentTeaserIndex);
+            if (diffNodes.length > 0) {
+                activeNodes = diffNodes;
+            }
         }
 
         // Only pick nodes that have a teaser
@@ -370,12 +379,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (teaserVideo) {
         teaserVideo.addEventListener("ended", () => {
             // EXPERIMENTAL: Always play the next random teaser when ended, regardless of mode!
-            playNextRandomTeaser();
+            playNextRandomTeaser(false);
         });
     }
 
-    // Initialize first teaser
-    playNextRandomTeaser();
+    // Initialize first teaser (only new releases!)
+    playNextRandomTeaser(true);
 
     // If no teaser video is loaded (e.g. no video files yet), initialize mini-player with the first EP info
     if (currentTeaserIndex === -1 && db.length > 0) {
