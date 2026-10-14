@@ -107,6 +107,10 @@ for ep_folder in sorted(os.listdir(data_dir)):
             ep_data['title'] = original_ep['title']
         if original_ep.get('jacket') and not ep_data['jacket']:
             ep_data['jacket'] = original_ep['jacket']
+        if original_ep.get('full_title'):
+            ep_data['full_title'] = original_ep['full_title']
+        if original_ep.get('video_fit'):
+            ep_data['video_fit'] = original_ep['video_fit']
         if original_ep.get('type'):
             ep_data['type'] = original_ep['type']
         if original_ep.get('images'):
@@ -125,6 +129,12 @@ for ep_folder in sorted(os.listdir(data_dir)):
         with open(info_path, 'r', encoding='utf-8') as f:
             try:
                 info = json.load(f)
+                if 'title' in info:
+                    ep_data['title'] = info['title']
+                if 'full_title' in info:
+                    ep_data['full_title'] = info['full_title']
+                if 'video_fit' in info:
+                    ep_data['video_fit'] = info['video_fit']
                 if 'price' in info:
                     ep_data['price'] = info['price']
                 if 'description' in info:

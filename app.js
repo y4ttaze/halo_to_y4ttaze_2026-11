@@ -297,6 +297,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (videoChangeTimeout) clearTimeout(videoChangeTimeout);
         
         videoChangeTimeout = setTimeout(() => {
+            // Apply special video_fit if specified (e.g. 'contain' for Beaver square video)
+            const matchingEP = db.find(e => e.teaser === newSrc || (e.teasers && e.teasers.some(t => t.src === newSrc)));
+            if (matchingEP && matchingEP.video_fit === 'contain') {
+                teaserVideo.classList.add('video-contain');
+            } else {
+                teaserVideo.classList.remove('video-contain');
+            }
+
             teaserVideo.src = newSrc;
             
             const onReady = () => {
@@ -475,7 +483,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <div class="catalog-ep-meta">
                 <span class="catalog-badge ${badgeClass}">${badgeLabel}</span>
             </div>
-            <div>${currentEP.title}</div>
+            <div>${currentEP.full_title || currentEP.title}</div>
         `;
         epArtistDisplay.innerText = currentEP.artist;
         

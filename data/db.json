@@ -32,7 +32,8 @@
     "tracks_count": 6,
     "description": "新譜！",
     "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze"
+    "yt": "https://www.youtube.com/@y4ttaze",
+    "video_fit": "contain"
   },
   {
     "id": "02_波呂_HUNGOVER",
@@ -137,7 +138,8 @@
     "tracks_count": 5,
     "description": "新譜！",
     "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze"
+    "yt": "https://www.youtube.com/@y4ttaze",
+    "full_title": "mixT4pe(2) (くまさんほか)"
   },
   {
     "id": "05_波呂_LANDMARK",

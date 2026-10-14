@@ -55,6 +55,10 @@ body, html {
     filter: brightness(0.5) contrast(1.2);
 }
 
+#teaser-video.video-contain {
+    object-fit: contain !important;
+}
+
 #jacket-bg-container {
     position: absolute;
     top: -10%; left: -10%;
