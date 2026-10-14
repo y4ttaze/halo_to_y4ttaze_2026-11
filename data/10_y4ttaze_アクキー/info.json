@@ -1,0 +1,15 @@
+{
+  "id": "10_y4ttaze_アクキー",
+  "artist": "y4ttaze",
+  "title": "アクキー",
+  "jacket": "data/10_y4ttaze_アクキー/00.サムネ.jpg",
+  "type": "merch",
+  "price": "各¥1,000",
+  "description": "「mixT4pe」と「Remix」シリーズのアクリルキーホルダー全6種が登場！Remixシリーズはこだわりの両面印刷仕様。どれも鞄につけたくなる可愛いデザインなので、ぜひお手に取ってみてください！",
+  "images": [
+    "data/10_y4ttaze_アクキー/01.Remix表面.jpg",
+    "data/10_y4ttaze_アクキー/02.Remix裏面.jpg",
+    "data/10_y4ttaze_アクキー/03.アクキー6種.jpg"
+  ],
+  "tracks": []
+}

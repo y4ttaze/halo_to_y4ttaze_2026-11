@@ -2,9 +2,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ---- App Logic & Audio Setup ----
 
     // ---- App Logic & Audio Setup ----
+    const appVersion = Date.now();
+    function getJacket(p) { return p ? (p + '?v=' + appVersion) : ''; }
+
     let db = [];
     try {
-        const res = await fetch('data/db.json?t=' + Date.now());
+        const res = await fetch('data/db.json?v=' + appVersion);
         if (res.ok) db = await res.json();
     } catch (e) {
         console.error("Failed to load db.json", e);
@@ -119,14 +122,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     db.forEach(ep => {
         if (ep.id && ep.id.startsWith("comp_")) return; // Exclude compilations from filters
-        if (!artistsInfo.find(a => a.name === ep.artist)) {
+        let existing = artistsInfo.find(a => a.name === ep.artist);
+        if (!existing) {
             artistsInfo.push({ name: ep.artist, img: ep.artist_img || '' });
+        } else if (!existing.img && ep.artist_img) {
+            existing.img = ep.artist_img;
         }
     });
 
     const artistFilterList = document.getElementById("artist-filter-list");
     let artistDOMNodes = [];
     let epDOMNodes = [];
+
+    const defaultAvatarSvg = "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M12%2012c2.21%200%204-1.79%204-4s-1.79-4-4-4-4%201.79-4%204%201.79%204%204%204zm0%202c-2.67%200-8%201.34-8%204v2h16v-2c0-2.66-5.33-4-8-4z%22%2F%3E%3C%2Fsvg%3E";
 
     function initArtistFilters() {
         if (!artistFilterList) return;
@@ -135,14 +143,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         artistsInfo.forEach((artist, index) => {
             const wrapper = document.createElement("div");
             wrapper.className = "artist-avatar-wrapper";
+            wrapper.title = artist.name;
             
-            let imgPath = artist.img;
-            if (!imgPath) {
-                imgPath = "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%3E%3Cpath%20d%3D%22M12%2012c2.21%200%204-1.79%204-4s-1.79-4-4-4-4%201.79-4%204%201.79%204%204%204zm0%202c-2.67%200-8%201.34-8%204v2h16v-2c0-2.66-5.33-4-8-4z%22%2F%3E%3C%2Fsvg%3E";
-            }
+            let imgPath = artist.img || defaultAvatarSvg;
             
             wrapper.innerHTML = `
-                <img src="${imgPath}" alt="${artist.name}" style="${!artist.img ? 'background-color: rgba(150, 150, 150, 0.5);' : ''}">
+                <img src="${imgPath}" alt="${artist.name}" onerror="this.onerror=null; this.src='${defaultAvatarSvg}';">
                 <div class="close-badge">✕</div>
             `;
             
@@ -169,19 +175,58 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
+    let newSectionWrapper = null;
+    let archiveSectionWrapper = null;
+
     function initEPCarousel() {
         epListContainer.innerHTML = "";
+        epDOMNodes = [];
+
+        // Create Section Wrappers
+        newSectionWrapper = document.createElement("div");
+        newSectionWrapper.className = "ep-section";
+        newSectionWrapper.innerHTML = `
+            <div class="section-divider">
+                <span class="badge-pill new-pill">NEW RELEASE</span>
+                <span class="section-title">11月ボカスト新譜</span>
+            </div>
+            <div class="section-cards" id="new-cards"></div>
+        `;
+
+        archiveSectionWrapper = document.createElement("div");
+        archiveSectionWrapper.className = "ep-section";
+        archiveSectionWrapper.innerHTML = `
+            <div class="section-divider">
+                <span class="badge-pill archive-pill">ARCHIVE</span>
+                <span class="section-title">旧譜（持込極少）</span>
+            </div>
+            <div class="section-cards" id="archive-cards"></div>
+        `;
+
+        epListContainer.appendChild(newSectionWrapper);
+        epListContainer.appendChild(archiveSectionWrapper);
+
+        const newGrid = newSectionWrapper.querySelector("#new-cards");
+        const archiveGrid = archiveSectionWrapper.querySelector("#archive-cards");
+
         db.forEach((ep, i) => {
             const card = document.createElement("div");
             card.className = "ep-card";
+            const badgeClass = ep.is_new ? "new" : "archive";
+            const badgeText = ep.is_new ? "NEW" : "旧譜";
             card.innerHTML = `
-                <img src="${ep.jacket || ''}" alt="Jacket">
+                <div class="ep-badge ${badgeClass}">${badgeText}</div>
+                <img src="${getJacket(ep.jacket)}" alt="Jacket">
                 <div class="ep-card-artist">${ep.artist}</div>
                 <div class="ep-card-title">${ep.title}</div>
             `;
             card.addEventListener("click", () => selectEP(i));
-            epListContainer.appendChild(card);
-            epDOMNodes.push({ card, artist: ep.artist });
+            if (ep.is_new) {
+                newGrid.appendChild(card);
+            } else {
+                archiveGrid.appendChild(card);
+            }
+            epDOMNodes.push({ card, artist: ep.artist, is_new: ep.is_new });
         });
     }
 
@@ -198,39 +243,37 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function updateEPCarousel() {
         let displayCount = 0;
+        let visibleNewCount = 0;
+        let visibleArchiveCount = 0;
+
         epDOMNodes.forEach((node, index) => {
-            const ep = db[index];
+            let isMatch = false;
             if (currentArtistFilterIndex !== -1) {
                 const selectedArtist = artistsInfo[currentArtistFilterIndex].name;
-                
-                let isMatch = node.artist === selectedArtist;
-                if (!isMatch && ep.id && ep.id.startsWith("comp_")) {
-                    if (ep.description && ep.description.includes(selectedArtist)) {
-                        isMatch = true;
-                    }
-                }
-
-                if (isMatch) {
-                    node.card.style.display = "block";
-                    node.card.style.animation = 'none';
-                    void node.card.offsetWidth; // Force reflow
-                    node.card.style.animation = `swoopIn 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards ${displayCount * 0.1}s`;
-                    displayCount++;
-                } else {
-                    node.card.style.display = "none";
-                }
+                isMatch = (node.artist === selectedArtist);
             } else {
-                if (ep.id && ep.id.startsWith("comp_")) {
-                    node.card.style.display = "none";
-                } else {
-                    node.card.style.display = "block";
-                    node.card.style.animation = 'none';
-                    void node.card.offsetWidth; // Force reflow
-                    node.card.style.animation = `swoopIn 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards ${displayCount * 0.1}s`;
-                    displayCount++;
-                }
+                isMatch = true;
+            }
+
+            if (isMatch) {
+                node.card.style.display = "block";
+                node.card.style.animation = 'none';
+                void node.card.offsetWidth; // Force reflow
+                node.card.style.animation = `swoopIn 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards ${displayCount * 0.08}s`;
+                displayCount++;
+                if (node.is_new) visibleNewCount++;
+                else visibleArchiveCount++;
+            } else {
+                node.card.style.display = "none";
             }
         });
+
+        if (newSectionWrapper) {
+            newSectionWrapper.style.display = visibleNewCount > 0 ? "block" : "none";
+        }
+        if (archiveSectionWrapper) {
+            archiveSectionWrapper.style.display = visibleArchiveCount > 0 ? "block" : "none";
+        }
     }
 
     initArtistFilters();
@@ -405,7 +448,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             miniPlayer.classList.add("catalog-active");
         }
         
-        jacketBg.src = currentEP.jacket || '';
+        jacketBg.src = getJacket(currentEP.jacket);
         jacketBgContainer.classList.add("active"); 
         
         const chosenTeaser = getEPTeaser(currentEP);
@@ -415,8 +458,16 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         }
         
-        currentJacketImg.src = currentEP.jacket || '';
-        epTitleDisplay.innerText = currentEP.title;
+        currentJacketImg.src = getJacket(currentEP.jacket);
+        
+        const badgeClass = currentEP.is_new ? 'new' : 'archive';
+        const badgeLabel = currentEP.is_new ? 'NEW RELEASE' : '旧譜（持込極少）';
+        epTitleDisplay.innerHTML = `
+            <div class="catalog-ep-meta">
+                <span class="catalog-badge ${badgeClass}">${badgeLabel}</span>
+            </div>
+            <div>${currentEP.title}</div>
+        `;
         epArtistDisplay.innerText = currentEP.artist;
         
         // Social Links

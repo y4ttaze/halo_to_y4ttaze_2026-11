@@ -1,80 +1,468 @@
 [
   {
-    "id": "halo_new_ep",
-    "artist": "波呂",
-    "title": "波呂 個人新譜 (仮)",
-    "jacket": "data/01_halo_new_ep/jacket.svg",
-    "artist_img": "data/01_halo_new_ep/artist_halo.jpg",
-    "teaser": null,
+    "id": "01_波呂とy4ttaze_絶叫するビーバーEP",
+    "prefix": "01",
+    "artist": "波呂とy4ttaze",
+    "title": "絶叫するビーバーEP",
+    "is_new": true,
+    "jacket": "data/01_波呂とy4ttaze_絶叫するビーバーEP/jacket.png",
+    "artist_img": "data/artist_波呂とy4ttaze.jpg",
+    "teaser": "data/01_波呂とy4ttaze_絶叫するビーバーEP/teaser.mp4",
     "tracks": [
       {
-        "title": "新曲1 (仮)"
+        "title": "合成音声のゆくえ Alter II"
       },
       {
-        "title": "新曲2 (仮)"
+        "title": "努力・未来・a beautiful star（努力）"
       },
       {
-        "title": "新曲3 (仮)"
+        "title": "AvienCloud1"
       },
       {
-        "title": "新曲4 (仮)"
+        "title": "海でも見に行こうぜ"
+      },
+      {
+        "title": "86 vol. y4ttaze"
+      },
+      {
+        "title": "バレンタイン密室殺人事件 〜勃起している場合は「①」を〜"
       }
     ],
-    "price": "価格未定",
-    "tracks_count": 4,
-    "description": "波呂の個人新譜EPです。鋭意制作中！",
+    "price": "¥1,000",
+    "tracks_count": 6,
+    "description": "新譜！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "02_波呂_HUNGOVER",
+    "prefix": "02",
+    "artist": "波呂",
+    "title": "HUNGOVER",
+    "is_new": true,
+    "jacket": "data/02_波呂_HUNGOVER/HUNGOVER.jpg",
+    "artist_img": "data/artist_波呂.jpg",
+    "teaser": "data/02_波呂_HUNGOVER/teaser.mp4",
+    "tracks": [
+      {
+        "title": "凍瘡"
+      },
+      {
+        "title": "桜の樹の下には！"
+      },
+      {
+        "title": "さよなら杜若"
+      },
+      {
+        "title": "たかが21ｇ"
+      },
+      {
+        "title": "POND LILY)"
+      },
+      {
+        "title": "しかたなく"
+      },
+      {
+        "title": "翻って、夏"
+      },
+      {
+        "title": "サンドイッチ！"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 8,
+    "description": "新譜！",
     "x": "https://x.com/c_alam_ela",
     "yt": "https://www.youtube.com/@c_alam_ela"
   },
   {
-    "id": "y4ttaze_new_ep",
+    "id": "03_y4ttaze_ヴィランEP",
+    "prefix": "03",
     "artist": "y4ttaze",
-    "title": "y4ttaze 個人新譜 (仮)",
-    "jacket": "data/02_y4ttaze_new_ep/jacket.svg",
-    "artist_img": "data/02_y4ttaze_new_ep/artist_y4ttaze.jpg",
+    "title": "ヴィラン(1)",
+    "is_new": true,
+    "jacket": "data/03_y4ttaze_ヴィランEP/jacket.png",
+    "artist_img": "data/artist_y4ttaze.jpg",
     "teaser": null,
     "tracks": [
       {
-        "title": "新曲A (仮)"
+        "title": "AvienCloud(2)"
       },
       {
-        "title": "新曲B (仮)"
+        "title": "DK"
       },
       {
-        "title": "新曲C (仮)"
+        "title": "AvienCloud(1)"
       },
       {
-        "title": "新曲D (仮)"
+        "title": "合成音声のゆくえ Alter II"
+      },
+      {
+        "title": "villain(1)"
       }
     ],
-    "price": "価格未定",
-    "tracks_count": 4,
-    "description": "y4ttazeの個人新譜EPです。音源・詳細情報は後日公開！",
+    "price": "¥1,000",
+    "tracks_count": 5,
+    "description": "y4ttazeソロ新譜EP。鋭意制作中！",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze"
   },
   {
-    "id": "collab_new_ep",
-    "artist": "波呂とy4ttaze",
-    "title": "波呂 × y4ttaze コラボEP (仮)",
-    "jacket": "data/03_collab_new_ep/jacket.svg",
-    "artist_img": "data/03_collab_new_ep/artist_collab.svg",
+    "id": "04_y4ttaze_mixT4pe(2)",
+    "prefix": "04",
+    "artist": "y4ttaze",
+    "title": "mixT4pe(2)",
+    "is_new": true,
+    "jacket": "data/04_y4ttaze_mixT4pe(2)/jacket.png",
+    "artist_img": "data/artist_y4ttaze.jpg",
     "teaser": null,
     "tracks": [
       {
-        "title": "コラボ曲1 (仮)"
+        "title": "ghost!"
       },
       {
-        "title": "コラボ曲2 (仮)"
+        "title": "森のくまさん"
       },
       {
-        "title": "コラボ曲3 (仮)"
+        "title": "地獄の門"
+      },
+      {
+        "title": "素敵な人"
+      },
+      {
+        "title": "ライフスタイル(無検閲)"
       }
     ],
-    "price": "価格未定",
-    "tracks_count": 3,
-    "description": "波呂とy4ttazeによるスペシャルコラボEP。乞うご期待！",
+    "price": "¥1,000",
+    "tracks_count": 5,
+    "description": "新譜！",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "05_波呂_LANDMARK",
+    "prefix": "05",
+    "artist": "波呂",
+    "title": "LANDMARK",
+    "is_new": false,
+    "jacket": "data/05_波呂_LANDMARK/LANDMARK.jpg",
+    "artist_img": "data/artist_波呂.jpg",
+    "teaser": "data/05_波呂_LANDMARK/teaser.mp4",
+    "tracks": [
+      {
+        "title": "17歳。"
+      },
+      {
+        "title": "fragile"
+      },
+      {
+        "title": "擬態"
+      },
+      {
+        "title": "啓蒙"
+      },
+      {
+        "title": "拗らせま専科"
+      },
+      {
+        "title": "DARLING"
+      },
+      {
+        "title": "PANIC！？"
+      },
+      {
+        "title": "犬犬犬"
+      },
+      {
+        "title": "炎症"
+      },
+      {
+        "title": "銃声"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 10,
+    "description": "旧譜（持ち込み極少）",
+    "x": "https://x.com/c_alam_ela",
+    "yt": "https://www.youtube.com/@c_alam_ela"
+  },
+  {
+    "id": "06_波呂_BOUQUET",
+    "prefix": "06",
+    "artist": "波呂",
+    "title": "BOUQUET",
+    "is_new": false,
+    "jacket": "data/06_波呂_BOUQUET/BOUQUET.jpg",
+    "artist_img": "data/artist_波呂.jpg",
+    "teaser": "data/06_波呂_BOUQUET/teaser.mp4",
+    "tracks": [
+      {
+        "title": "全員死ねよ！！"
+      },
+      {
+        "title": "Lukcy Hit (1)"
+      },
+      {
+        "title": "ラブ・ポーション"
+      },
+      {
+        "title": "肌荒れ"
+      },
+      {
+        "title": "サラダボウル"
+      },
+      {
+        "title": "蛞蝓"
+      },
+      {
+        "title": "馬鹿"
+      },
+      {
+        "title": "https"
+      },
+      {
+        "title": "しびれる"
+      },
+      {
+        "title": "花束"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 10,
+    "description": "旧譜（持ち込み極少）",
+    "x": "https://x.com/c_alam_ela",
+    "yt": "https://www.youtube.com/@c_alam_ela"
+  },
+  {
+    "id": "07_y4ttaze_mixT4pe_deluxe",
+    "prefix": "07",
+    "artist": "y4ttaze",
+    "title": "mixT4pe(deluxe)",
+    "is_new": false,
+    "jacket": "data/07_y4ttaze_mixT4pe_deluxe/jacket.png",
+    "artist_img": "data/artist_y4ttaze.jpg",
+    "teaser": "data/07_y4ttaze_mixT4pe_deluxe/teaser.mp4",
+    "tracks": [
+      {
+        "title": "ヘミングウェイ"
+      },
+      {
+        "title": "B29"
+      },
+      {
+        "title": "レ⚪︎プ"
+      },
+      {
+        "title": "ラブレター"
+      },
+      {
+        "title": "湿度67%"
+      },
+      {
+        "title": "iluvu!"
+      },
+      {
+        "title": "アニメモッシュ"
+      },
+      {
+        "title": "ADHD"
+      },
+      {
+        "title": "みかん"
+      },
+      {
+        "title": "ハイエース!"
+      },
+      {
+        "title": "蝶々"
+      },
+      {
+        "title": "拝啓ノストラダムス様"
+      },
+      {
+        "title": "メサブギー"
+      },
+      {
+        "title": "7_10"
+      },
+      {
+        "title": "Suic*deChain_with_serca"
+      },
+      {
+        "title": "ビョーキになっちゃった"
+      },
+      {
+        "title": "インベンション"
+      },
+      {
+        "title": "ハイパーウラニウム"
+      },
+      {
+        "title": "HappyBirthday(仮称)"
+      },
+      {
+        "title": "バックヤード"
+      },
+      {
+        "title": "31"
+      },
+      {
+        "title": "キス"
+      },
+      {
+        "title": "車窓"
+      },
+      {
+        "title": "ラブレターremix"
+      },
+      {
+        "title": "みかんremix"
+      },
+      {
+        "title": "ビョーキになっちゃったremix"
+      },
+      {
+        "title": "ハイエース!remix"
+      },
+      {
+        "title": "メサブギーremix"
+      },
+      {
+        "title": "インベンションoriginal"
+      },
+      {
+        "title": "7_10remix"
+      },
+      {
+        "title": "レ⚪︎プremix"
+      },
+      {
+        "title": "ラブレターremix"
+      },
+      {
+        "title": "ヘミングウェイremix"
+      },
+      {
+        "title": "iluvu!_remix"
+      }
+    ],
+    "price": "¥2,000",
+    "tracks_count": 34,
+    "description": "2025年リリースの34曲入り大ボリューム・デラックス版EP！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "08_y4ttaze_sexT4pe",
+    "prefix": "08",
+    "artist": "y4ttaze",
+    "title": "sexT4pe",
+    "is_new": false,
+    "jacket": "data/08_y4ttaze_sexT4pe/jacket.jpg",
+    "artist_img": "data/08_y4ttaze_sexT4pe/artist_y4ttaze.jpg",
+    "teaser": "data/08_y4ttaze_sexT4pe/teaser.mp4",
+    "tracks": [
+      {
+        "title": "サハラ(pixel Sahara)"
+      },
+      {
+        "title": "Interlude(1)"
+      },
+      {
+        "title": "BitchBoi"
+      },
+      {
+        "title": "Interlude(2)"
+      },
+      {
+        "title": "クリムト"
+      },
+      {
+        "title": "セックステープ"
+      },
+      {
+        "title": "シロップ"
+      },
+      {
+        "title": "BoisLuv"
+      },
+      {
+        "title": "クリムト(Remix)"
+      },
+      {
+        "title": "LuvPotion"
+      },
+      {
+        "title": "BitchBoi(ft. flower)"
+      },
+      {
+        "title": "(radio)"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 12,
+    "description": "旧譜（持ち込み極少）",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "09_y4ttaze_DaysBeforeVillain",
+    "prefix": "09",
+    "artist": "y4ttaze",
+    "title": "days before villain EP",
+    "is_new": false,
+    "jacket": "data/09_y4ttaze_DaysBeforeVillain/jacket.jpg",
+    "artist_img": "data/09_y4ttaze_DaysBeforeVillain/artist_y4ttaze.jpg",
+    "teaser": "data/09_y4ttaze_DaysBeforeVillain/teaser.mp4",
+    "tracks": [
+      {
+        "title": "あおいくん"
+      },
+      {
+        "title": "ゆうえんち"
+      },
+      {
+        "title": "17ice(142cm) feat. 夜行梅"
+      },
+      {
+        "title": "ショートフィルム!"
+      },
+      {
+        "title": "スペースシャトル"
+      },
+      {
+        "title": "神椿"
+      },
+      {
+        "title": "(radio)"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 7,
+    "description": "2026年7月リリースの前作EP（残少）",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "10_y4ttaze_アクキー",
+    "prefix": "10",
+    "artist": "y4ttaze",
+    "title": "アクキー",
+    "is_new": false,
+    "jacket": "data/10_y4ttaze_アクキー/00.サムネ.jpg",
+    "artist_img": "data/artist_y4ttaze.jpg",
+    "teaser": "data/10_y4ttaze_アクキー/teaser.mp4",
+    "tracks": [],
+    "price": "各¥1,000",
+    "tracks_count": 0,
+    "description": "「mixT4pe」と「Remix」シリーズのアクリルキーホルダー全6種が登場！Remixシリーズはこだわりの両面印刷仕様。どれも鞄につけたくなる可愛いデザインなので、ぜひお手に取ってみてください！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze",
+    "type": "merch",
+    "images": [
+      "data/10_y4ttaze_アクキー/01.Remix表面.jpg",
+      "data/10_y4ttaze_アクキー/02.Remix裏面.jpg",
+      "data/10_y4ttaze_アクキー/03.アクキー6種.jpg"
+    ]
   }
 ]
