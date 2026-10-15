@@ -75,7 +75,7 @@
     "is_new": true,
     "jacket": "data/03_y4ttaze_mixT4pe(2)/jacket.png",
     "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": null,
+    "teaser": "data/03_y4ttaze_mixT4pe(2)/teaser.mp4",
     "tracks": [
       {
         "title": "ghost!"
