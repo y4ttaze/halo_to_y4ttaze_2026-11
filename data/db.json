@@ -84,7 +84,7 @@
     "is_new": true,
     "jacket": "data/03_y4ttaze_ヴィランEP/jacket.png",
     "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": null,
+    "teaser": "data/03_y4ttaze_ヴィランEP/teaser.mp4",
     "tracks": [
       {
         "title": "AvienCloud(2)"
