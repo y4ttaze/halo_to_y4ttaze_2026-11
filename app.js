@@ -214,8 +214,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             card.className = "ep-card";
             const badgeClass = ep.is_new ? "new" : "archive";
             const badgeText = ep.is_new ? "NEW" : "旧譜";
+            const badgeHTML = ep.type === "merch" ? "" : `<div class="ep-badge ${badgeClass}">${badgeText}</div>`;
             card.innerHTML = `
-                <div class="ep-badge ${badgeClass}">${badgeText}</div>
+                ${badgeHTML}
                 <img src="${getJacket(ep.jacket)}" alt="Jacket">
                 <div class="ep-card-artist">${ep.artist}</div>
                 <div class="ep-card-title">${ep.title}</div>
@@ -479,9 +480,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         const badgeClass = currentEP.is_new ? 'new' : 'archive';
         const badgeLabel = currentEP.is_new ? 'NEW RELEASE' : '旧譜（持込極少）';
+        const badgeHTML = currentEP.type === 'merch' ? '' : `<span class="catalog-badge ${badgeClass}">${badgeLabel}</span>`;
         epTitleDisplay.innerHTML = `
             <div class="catalog-ep-meta">
-                <span class="catalog-badge ${badgeClass}">${badgeLabel}</span>
+                ${badgeHTML}
             </div>
             <div>${currentEP.full_title || currentEP.title}</div>
         `;

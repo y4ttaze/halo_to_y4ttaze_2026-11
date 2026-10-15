@@ -36,14 +36,79 @@
     "video_fit": "cover"
   },
   {
-    "id": "02_波呂_HUNGOVER",
+    "id": "02_y4ttaze_ヴィランEP",
     "prefix": "02",
+    "artist": "y4ttaze",
+    "title": "ヴィラン(1)",
+    "is_new": true,
+    "jacket": "data/02_y4ttaze_ヴィランEP/jacket.png",
+    "artist_img": "data/artist_y4ttaze.jpg",
+    "teaser": "data/02_y4ttaze_ヴィランEP/teaser.mp4",
+    "tracks": [
+      {
+        "title": "AvienCloud(2)"
+      },
+      {
+        "title": "DK"
+      },
+      {
+        "title": "AvienCloud(1)"
+      },
+      {
+        "title": "合成音声のゆくえ Alter II"
+      },
+      {
+        "title": "villain(1)"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 5,
+    "description": "y4ttazeソロ新譜EP。鋭意制作中！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "03_y4ttaze_mixT4pe(2)",
+    "prefix": "03",
+    "artist": "y4ttaze",
+    "title": "mixT4pe(2)",
+    "is_new": true,
+    "jacket": "data/03_y4ttaze_mixT4pe(2)/jacket.png",
+    "artist_img": "data/artist_y4ttaze.jpg",
+    "teaser": null,
+    "tracks": [
+      {
+        "title": "ghost!"
+      },
+      {
+        "title": "森のくまさん"
+      },
+      {
+        "title": "地獄の門"
+      },
+      {
+        "title": "素敵な人"
+      },
+      {
+        "title": "ライフスタイル(無検閲)"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 5,
+    "description": "新譜！",
+    "x": "https://x.com/y4ttaze",
+    "yt": "https://www.youtube.com/@y4ttaze",
+    "full_title": "mixT4pe(2) (くまさんほか)"
+  },
+  {
+    "id": "04_波呂_HUNGOVER",
+    "prefix": "04",
     "artist": "波呂",
     "title": "HUNGOVER",
     "is_new": true,
-    "jacket": "data/02_波呂_HUNGOVER/HUNGOVER.jpg",
+    "jacket": "data/04_波呂_HUNGOVER/HUNGOVER.jpg",
     "artist_img": "data/artist_波呂.jpg",
-    "teaser": "data/02_波呂_HUNGOVER/teaser.mp4",
+    "teaser": "data/04_波呂_HUNGOVER/teaser.mp4",
     "tracks": [
       {
         "title": "凍瘡"
@@ -77,173 +142,14 @@
     "yt": "https://www.youtube.com/@c_alam_ela"
   },
   {
-    "id": "03_y4ttaze_ヴィランEP",
-    "prefix": "03",
-    "artist": "y4ttaze",
-    "title": "ヴィラン(1)",
-    "is_new": true,
-    "jacket": "data/03_y4ttaze_ヴィランEP/jacket.png",
-    "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": "data/03_y4ttaze_ヴィランEP/teaser.mp4",
-    "tracks": [
-      {
-        "title": "AvienCloud(2)"
-      },
-      {
-        "title": "DK"
-      },
-      {
-        "title": "AvienCloud(1)"
-      },
-      {
-        "title": "合成音声のゆくえ Alter II"
-      },
-      {
-        "title": "villain(1)"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 5,
-    "description": "y4ttazeソロ新譜EP。鋭意制作中！",
-    "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze"
-  },
-  {
-    "id": "04_y4ttaze_mixT4pe(2)",
-    "prefix": "04",
-    "artist": "y4ttaze",
-    "title": "mixT4pe(2)",
-    "is_new": true,
-    "jacket": "data/04_y4ttaze_mixT4pe(2)/jacket.png",
-    "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": null,
-    "tracks": [
-      {
-        "title": "ghost!"
-      },
-      {
-        "title": "森のくまさん"
-      },
-      {
-        "title": "地獄の門"
-      },
-      {
-        "title": "素敵な人"
-      },
-      {
-        "title": "ライフスタイル(無検閲)"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 5,
-    "description": "新譜！",
-    "x": "https://x.com/y4ttaze",
-    "yt": "https://www.youtube.com/@y4ttaze",
-    "full_title": "mixT4pe(2) (くまさんほか)"
-  },
-  {
-    "id": "05_波呂_LANDMARK",
+    "id": "05_y4ttaze_mixT4pe_deluxe",
     "prefix": "05",
-    "artist": "波呂",
-    "title": "LANDMARK",
-    "is_new": false,
-    "jacket": "data/05_波呂_LANDMARK/LANDMARK.jpg",
-    "artist_img": "data/artist_波呂.jpg",
-    "teaser": "data/05_波呂_LANDMARK/teaser.mp4",
-    "tracks": [
-      {
-        "title": "17歳。"
-      },
-      {
-        "title": "fragile"
-      },
-      {
-        "title": "擬態"
-      },
-      {
-        "title": "啓蒙"
-      },
-      {
-        "title": "拗らせま専科"
-      },
-      {
-        "title": "DARLING"
-      },
-      {
-        "title": "PANIC！？"
-      },
-      {
-        "title": "犬犬犬"
-      },
-      {
-        "title": "炎症"
-      },
-      {
-        "title": "銃声"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 10,
-    "description": "旧譜（持ち込み極少）",
-    "x": "https://x.com/c_alam_ela",
-    "yt": "https://www.youtube.com/@c_alam_ela"
-  },
-  {
-    "id": "06_波呂_BOUQUET",
-    "prefix": "06",
-    "artist": "波呂",
-    "title": "BOUQUET",
-    "is_new": false,
-    "jacket": "data/06_波呂_BOUQUET/BOUQUET.jpg",
-    "artist_img": "data/artist_波呂.jpg",
-    "teaser": "data/06_波呂_BOUQUET/teaser.mp4",
-    "tracks": [
-      {
-        "title": "全員死ねよ！！"
-      },
-      {
-        "title": "Lukcy Hit (1)"
-      },
-      {
-        "title": "ラブ・ポーション"
-      },
-      {
-        "title": "肌荒れ"
-      },
-      {
-        "title": "サラダボウル"
-      },
-      {
-        "title": "蛞蝓"
-      },
-      {
-        "title": "馬鹿"
-      },
-      {
-        "title": "https"
-      },
-      {
-        "title": "しびれる"
-      },
-      {
-        "title": "花束"
-      }
-    ],
-    "price": "¥1,000",
-    "tracks_count": 10,
-    "description": "旧譜（持ち込み極少）",
-    "x": "https://x.com/c_alam_ela",
-    "yt": "https://www.youtube.com/@c_alam_ela"
-  },
-  {
-    "id": "07_y4ttaze_mixT4pe_deluxe",
-    "prefix": "07",
     "artist": "y4ttaze",
     "title": "mixT4pe(deluxe)",
     "is_new": false,
-    "jacket": "data/07_y4ttaze_mixT4pe_deluxe/jacket.png",
+    "jacket": "data/05_y4ttaze_mixT4pe_deluxe/jacket.png",
     "artist_img": "data/artist_y4ttaze.jpg",
-    "teaser": "data/07_y4ttaze_mixT4pe_deluxe/teaser.mp4",
+    "teaser": "data/05_y4ttaze_mixT4pe_deluxe/teaser.mp4",
     "tracks": [
       {
         "title": "ヘミングウェイ"
@@ -353,6 +259,100 @@
     "description": "2025年リリースの34曲入り大ボリューム・デラックス版EP！",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze"
+  },
+  {
+    "id": "06_波呂_LANDMARK",
+    "prefix": "06",
+    "artist": "波呂",
+    "title": "LANDMARK",
+    "is_new": false,
+    "jacket": "data/06_波呂_LANDMARK/LANDMARK.jpg",
+    "artist_img": "data/artist_波呂.jpg",
+    "teaser": "data/06_波呂_LANDMARK/teaser.mp4",
+    "tracks": [
+      {
+        "title": "17歳。"
+      },
+      {
+        "title": "fragile"
+      },
+      {
+        "title": "擬態"
+      },
+      {
+        "title": "啓蒙"
+      },
+      {
+        "title": "拗らせま専科"
+      },
+      {
+        "title": "DARLING"
+      },
+      {
+        "title": "PANIC！？"
+      },
+      {
+        "title": "犬犬犬"
+      },
+      {
+        "title": "炎症"
+      },
+      {
+        "title": "銃声"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 10,
+    "description": "旧譜（持ち込み極少）",
+    "x": "https://x.com/c_alam_ela",
+    "yt": "https://www.youtube.com/@c_alam_ela"
+  },
+  {
+    "id": "07_波呂_BOUQUET",
+    "prefix": "07",
+    "artist": "波呂",
+    "title": "BOUQUET",
+    "is_new": false,
+    "jacket": "data/07_波呂_BOUQUET/BOUQUET.jpg",
+    "artist_img": "data/artist_波呂.jpg",
+    "teaser": "data/07_波呂_BOUQUET/teaser.mp4",
+    "tracks": [
+      {
+        "title": "全員死ねよ！！"
+      },
+      {
+        "title": "Lukcy Hit (1)"
+      },
+      {
+        "title": "ラブ・ポーション"
+      },
+      {
+        "title": "肌荒れ"
+      },
+      {
+        "title": "サラダボウル"
+      },
+      {
+        "title": "蛞蝓"
+      },
+      {
+        "title": "馬鹿"
+      },
+      {
+        "title": "https"
+      },
+      {
+        "title": "しびれる"
+      },
+      {
+        "title": "花束"
+      }
+    ],
+    "price": "¥1,000",
+    "tracks_count": 10,
+    "description": "旧譜（持ち込み極少）",
+    "x": "https://x.com/c_alam_ela",
+    "yt": "https://www.youtube.com/@c_alam_ela"
   },
   {
     "id": "08_y4ttaze_アクキー",
