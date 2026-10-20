@@ -30,7 +30,7 @@
     ],
     "price": "¥1,000",
     "tracks_count": 6,
-    "description": "新譜！",
+    "description": "締め切り寝落ち、怨念の100テイク、鍋パのノリ。悪ノリ。",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze",
     "video_fit": "cover"
@@ -39,7 +39,7 @@
     "id": "02_y4ttaze_ヴィランEP",
     "prefix": "02",
     "artist": "y4ttaze",
-    "title": "ヴィラン(1)",
+    "title": "ヴィランEP(1)",
     "is_new": true,
     "jacket": "data/02_y4ttaze_ヴィランEP/jacket.png",
     "artist_img": "data/artist_y4ttaze.jpg",
@@ -59,11 +59,23 @@
       },
       {
         "title": "villain(1)"
+      },
+      {
+        "title": "villain(2)"
+      },
+      {
+        "title": "Psycho"
+      },
+      {
+        "title": "CAS10"
+      },
+      {
+        "title": "ラジオ villainEP"
       }
     ],
     "price": "¥1,000",
-    "tracks_count": 5,
-    "description": "y4ttazeソロ新譜EP。鋭意制作中！",
+    "tracks_count": 9,
+    "description": "こんな捻くれたやつを生み出す球技大会の功罪は大きい",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze"
   },
@@ -91,14 +103,26 @@
       },
       {
         "title": "ライフスタイル(無検閲)"
+      },
+      {
+        "title": "(微ホラー注意)mixT4pe(2)_ラジオ"
+      },
+      {
+        "title": "素敵な人(demo)"
+      },
+      {
+        "title": "森のくまさん(demo)"
+      },
+      {
+        "title": "メサブギー(demo)"
       }
     ],
     "price": "¥1,000",
-    "tracks_count": 5,
-    "description": "新譜！",
+    "tracks_count": 9,
+    "description": "さらば元恋人よ！新たな恋はくまさんと!?",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze",
-    "full_title": "mixT4pe(2) (くまさんほか)"
+    "full_title": "mixT4pe(2)"
   },
   {
     "id": "04_波呂_HUNGOVER",
@@ -137,7 +161,7 @@
     ],
     "price": "¥1,000",
     "tracks_count": 8,
-    "description": "新譜！",
+    "description": "二日酔いと焦りと青春。波呂の真骨頂が詰まった自主制作3rd。",
     "x": "https://x.com/c_alam_ela",
     "yt": "https://www.youtube.com/@c_alam_ela"
   },
@@ -256,7 +280,7 @@
     ],
     "price": "¥2,000",
     "tracks_count": 34,
-    "description": "2025年リリースの34曲入り大ボリューム・デラックス版EP！",
+    "description": "旧譜（持ち込み数少）",
     "x": "https://x.com/y4ttaze",
     "yt": "https://www.youtube.com/@y4ttaze"
   },
@@ -303,7 +327,7 @@
     ],
     "price": "¥1,000",
     "tracks_count": 10,
-    "description": "旧譜（持ち込み極少）",
+    "description": "旧譜（持ち込み数少）",
     "x": "https://x.com/c_alam_ela",
     "yt": "https://www.youtube.com/@c_alam_ela"
   },
@@ -350,7 +374,7 @@
     ],
     "price": "¥1,000",
     "tracks_count": 10,
-    "description": "旧譜（持ち込み極少）",
+    "description": "旧譜（持ち込み数少）",
     "x": "https://x.com/c_alam_ela",
     "yt": "https://www.youtube.com/@c_alam_ela"
   },
